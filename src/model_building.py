@@ -90,7 +90,7 @@ def main():
         y_train = train_data.iloc[:, -1].values
 
         clf = train_model(X_train, y_train, params)
-        save_model(clf, r'models\random_forest.pkl')
+        save_model(clf, r'models\model.pkl')
     except Exception as e:
         logger.error(f"Failed to complete the model building proces: {e}")
         print(f'Error: {e}')
